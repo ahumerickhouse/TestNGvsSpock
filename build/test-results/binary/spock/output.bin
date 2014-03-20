@@ -1,0 +1,4 @@
+"Spec TwoSpec - Groups: regression
+*Spec FourSpec - Groups: regression, build
+&Spec FiveSpec - Groups: smoke, broken
+)Spec SixSpec - Groups: regression, smoke

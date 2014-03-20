@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bloomhealthco.spock.specs.FourSpec" tests="1" failures="0" errors="0" timestamp="2014-03-20T17:56:04" hostname="Aaron-Humerickhouses-MacBook-Pro.local" time="2.001">
+  <properties/>
+  <testcase name="OneTest" classname="com.bloomhealthco.spock.specs.FourSpec" time="2.001"/>
+  <system-out><![CDATA[Spec FourSpec - Groups: regression, build
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
