@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bloomhealthco.testng.tests.FourTest" tests="1" failures="0" errors="0" timestamp="2014-03-20T17:56:28" hostname="Aaron-Humerickhouses-MacBook-Pro.local" time="2.233">
-  <properties/>
-  <testcase name="testOne" classname="com.bloomhealthco.testng.tests.FourTest" time="2.233"/>
-  <system-out><![CDATA[Test FourTest - Groups: smoke, broken
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,10 +1,14 @@
 package com.bloomhealthco.spock.specs
 
+import com.bloomhealthco.spock.groups.Build
+import com.bloomhealthco.spock.groups.Regression
 import org.junit.Assert
 import spock.lang.Specification
+import org.junit.experimental.categories.Category
 
 class FourSpec extends Specification{
-    def "OneTest"() {
+    @Category([Regression.class, Build.class])
+    def "FourTest"() {
         when: "A user prints a line"
         System.sleep(2000)
         println("Spec FourSpec - Groups: regression, build")

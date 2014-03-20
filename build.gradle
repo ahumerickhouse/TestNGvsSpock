@@ -48,4 +48,16 @@ task "testNg"(type: Test) {
 
 task "spock"(type: Test) {
     setMaxParallelForks Runtime.runtime.availableProcessors()
+    useJUnit() {
+        if (project.hasProperty("spock.category")) {
+            options.includeCategories "com.bloomhealthco.spock.groups.${project.getProperty("spock.category")}"
+            if(project.getProperty("spock.category") != "Broken") {
+                options.excludeCategories "com.bloomhealthco.spock.groups.Broken"
+            }
+        }
+    }
+    //Display what test is being executed
+    beforeTest { descriptor ->
+        logger.lifecycle("Running test: " + descriptor)
+    }
 }

@@ -17,14 +17,14 @@ Groups include:
 - broken
 
 ####Spock
-    ./gradlew -Dspock.single=<SUITE CLASS> spock
+    ./gradlew -Pspock.category=<SUITE CLASS> spock
 Suite Classes include:
 
-- SmokeSuite
-- RegressionSuite
-- BuildSuite
-- SlowSuite
-- BrokenSuite
+- Smoke
+- Regression
+- Build
+- Slow
+- Broken
 
 ##Documents
 
