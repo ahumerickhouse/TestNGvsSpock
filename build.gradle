@@ -28,7 +28,7 @@ task "testNg"(type: Test) {
         //Parallel tests
         setMaxParallelForks Runtime.runtime.availableProcessors()
 
-        //Set groups to run, exclude broken unless broken is specified
+        //Set utilities to run, exclude broken unless broken is specified
         if(project.hasProperty("testNG.group")){
             includeGroups project.getProperty("testNG.group")
             if(project.getProperty("testNG.group") != "broken") {
@@ -50,9 +50,9 @@ task "spock"(type: Test) {
     setMaxParallelForks Runtime.runtime.availableProcessors()
     useJUnit() {
         if (project.hasProperty("spock.category")) {
-            options.includeCategories "com.bloomhealthco.spock.groups.${project.getProperty("spock.category")}"
+            options.includeCategories "com.bloomhealthco.spock.utilities.${project.getProperty("spock.category")}"
             if(project.getProperty("spock.category") != "Broken") {
-                options.excludeCategories "com.bloomhealthco.spock.groups.Broken"
+                options.excludeCategories "com.bloomhealthco.spock.utilities.Broken"
             }
         }
     }

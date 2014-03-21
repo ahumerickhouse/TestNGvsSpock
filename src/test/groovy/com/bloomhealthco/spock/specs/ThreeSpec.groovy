@@ -1,8 +1,8 @@
 package com.bloomhealthco.spock.specs
 
-import com.bloomhealthco.spock.groups.Broken
-import com.bloomhealthco.spock.groups.Build
-import com.bloomhealthco.spock.groups.Regression
+import com.bloomhealthco.spock.utilities.Broken
+import com.bloomhealthco.spock.utilities.Build
+import com.bloomhealthco.spock.utilities.Regression
 import org.junit.Assert
 import spock.lang.Specification
 import org.junit.experimental.categories.Category

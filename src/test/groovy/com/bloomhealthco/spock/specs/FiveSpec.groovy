@@ -1,7 +1,7 @@
 package com.bloomhealthco.spock.specs
 
-import com.bloomhealthco.spock.groups.Regression
-import com.bloomhealthco.spock.groups.Slow
+import com.bloomhealthco.spock.utilities.Regression
+import com.bloomhealthco.spock.utilities.Slow
 import org.junit.Assert
 import spock.lang.Specification
 import org.junit.experimental.categories.Category
